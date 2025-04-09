@@ -1,0 +1,18 @@
+{
+  "base_unit": "meter_per_second",
+  "meter_per_second": {
+    "display": "m/s",
+    "to_base": "value",
+    "from_base": "value"
+  },
+  "kilometer_per_hour": {
+    "display": "km/h",
+    "to_base": "value / 3.6",
+    "from_base": "value * 3.6"
+  },
+  "mile_per_hour": {
+    "display": "mph",
+    "to_base": "value / 2.23694",
+    "from_base": "value * 2.23694"
+  }
+}
