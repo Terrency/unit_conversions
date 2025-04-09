@@ -1,6 +1,0 @@
-{
-  "name": "kilometer_per_hour", // 单位名称
-  "category": "speed",          // 单位类别（如速度）
-  "base_unit": "meter_per_second", // 基础单位
-  "conversion_formula": "value / 3.6" // 转换公式
-}

@@ -1,0 +1,18 @@
+{
+  "base_unit": "meter",
+  "meter": {
+    "display": "m",
+    "to_base": "value",
+    "from_base": "value"
+  },
+  "kilometer": {
+    "display": "km",
+    "to_base": "value * 1000",
+    "from_base": "value / 1000"
+  },
+  "mile": {
+    "display": "mi",
+    "to_base": "value * 1609.344",
+    "from_base": "value / 1609.344"
+  }
+}

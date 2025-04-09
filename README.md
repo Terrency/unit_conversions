@@ -7,7 +7,7 @@ other language folders contain the conversion code in other languages.
 ## Usage
 
 
-## units.json
+## Units json
 ```json
 {
   "speed": {
@@ -33,8 +33,9 @@ other language folders contain the conversion code in other languages.
 ```
 
 ## Add a new units step by step
-1. Add a new unit to units.json
-2. Add a new unit conversion to conversion.json
+1. Open units.json
+2. Add new Category
+3. Add base_unit and units, make display, to_base, from_base
 
 ## Existing Units and category
 | Category | Units |
