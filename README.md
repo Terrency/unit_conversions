@@ -8,6 +8,7 @@ other language folders contain the conversion code in other languages.
 
 
 ## Units json
+1. 第一版设计采用表达式执行单位间转换， 例如 meter_per_second = kilometer_per_hour / 3.6
 ```json
 {
   "speed": {
@@ -27,11 +28,29 @@ other language folders contain the conversion code in other languages.
       "to_base": "value / 2.23694",
       "from_base": "value * 2.23694"
     }
-  },
-  ...
+  }
 }
 ```
-
+2. 第二版借鉴了FMI的设计，factor默认值1.0， offset 默认值为0.0，例如 v_base = factor * v_unit + offset 
+```json
+{
+  "speed": {
+    "base_unit": "meter_per_second",
+    "meter_per_second": {
+      "display": "m/s",
+      "factor": 1
+    },
+    "kilometer_per_hour": {
+      "display": "km/h",
+      "factor": 3.6
+    },
+    "mile_per_hour": {
+      "display": "mph",
+      "factor": 2.23694
+    }
+  }
+}
+```
 ## Add a new units step by step
 1. Open units.json
 2. Add new Category
