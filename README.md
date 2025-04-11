@@ -9,7 +9,9 @@ other language folders contain the conversion code in other languages.
 
 ## Units json
 1. 第一版设计采用表达式执行单位间转换， 例如 meter_per_second = kilometer_per_hour / 3.6
-```json
+2. 第二版借鉴了FMI的设计，factor默认值1.0， offset 默认值为0.0，例如 v_base = factor * v_unit + offset
+
+```json 第一版
 {
   "speed": {
     "base_unit": "meter_per_second",
@@ -31,8 +33,8 @@ other language folders contain the conversion code in other languages.
   }
 }
 ```
-2. 第二版借鉴了FMI的设计，factor默认值1.0， offset 默认值为0.0，例如 v_base = factor * v_unit + offset 
-```json
+ 
+```json 第二版
 {
   "speed": {
     "base_unit": "meter_per_second",
